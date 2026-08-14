@@ -1,0 +1,37 @@
+# 🛡️ Sistema de Pentesting Autónomo Multi-Agente
+
+## 📖 Descripción General
+
+Este proyecto es un **sistema de pentesting autónomo** que utiliza una arquitectura multi-agente orquestada por **LangGraph**. Simula un flujo completo de pruebas de penetración, desde el reconocimiento hasta la generación de informes, demostrando cómo los agentes de IA pueden colaborar para planificar y ejecutar ataques de forma autónoma.
+
+**Estado Actual:** Prototipo funcional con simulación de herramientas. Diseñado para demostrar el flujo lógico y la arquitectura MCP (Model Context Protocol).
+
+## ✨ Características Principales
+
+*   **Arquitectura Multi-Agente:** Coordinación de agentes especializados (Reconocimiento, Escaneo, Planificación, Ejecución, Reporte) mediante un orquestador central.
+*   **Integración con LangGraph:** El orquestador gestiona el flujo de trabajo como un grafo de estados, permitiendo decisiones dinámicas y bucles de ejecución.
+*   **Flujo de Pentesting Simulado:** Demostración completa de un ataque:
+    *   Descubrimiento de superficie de ataque.
+    *   Escaneo de vulnerabilidades (OWASP Top 10, CVE simulados).
+    *   Planificación automática de secuencias de ataque.
+    *   Ejecución simulada de exploits.
+    *   Generación de informes técnicos.
+*   **Trazabilidad y Logs:** Registro detallado de cada acción y decisión tomada por los agentes, facilitando la auditoría y depuración.
+*   **Preparado para MCP:** Arquitectura diseñada para integrar herramientas reales (Nmap, Nuclei, etc.) como servidores MCP en el futuro.
+
+## 🚀 Guía de Inicio Rápido
+
+Sigue estos pasos para tener el sistema en funcionamiento en tu máquina local.
+
+### 📋 Requisitos Previos
+
+*   **Python 3.10 o superior.**
+*   **pip** (gestor de paquetes de Python).
+*   **(Recomendado)** Entorno virtual de Python.
+
+### 🛠️ Instalación
+
+1.  **Clonar o descargar el repositorio.**
+    ```bash
+    git clone <url-del-repositorio>
+    cd <nombre-del-directorio>
